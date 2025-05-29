@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilestyle.css" media="screen and (max-width: 800px)">
 </head>
 <body>
+<div class="container">
     <h1>Покупка</h1>
-    <div class="flex-wrapper">
+    <div id="one" class="flex-wrapper">
         <div class="add-todo-wrapper">
             <div class="input-wrapper">
                 <input onkeydown="return checkPhoneKey(event.key)" placeholder="Товар" type="text" id="description-task">
@@ -23,9 +26,10 @@
         <div class="todos-wrapper">
         </div>
     </div>
-    <div class="flex2">
+    <div id="two" class="flex2">
         <img src="stocks.jpg" alt="stk">
     </div>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
