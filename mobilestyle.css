@@ -3,7 +3,7 @@
        
         width: 355px;
         height:auto;
-        display: grid;
+        /* display: grid; */
         
         
     }
@@ -15,41 +15,65 @@
         /* border: 1px solid red; */
     }
     .container > div { 
-        flex-grow: 1;
+        /* flex-grow: 1; */
         width: 355px; 
     }
     .todos-wrapper {
         background: white;
-        width: 270px;
-        height: 140px;
-        transform: translateX(-14px);
-        /* flex-flow: column; */
-        /* justify-content:center; */
-        /* align-items: center; */
-        /* padding-top: 2rem; */
+        width: 360px;
+        height: auto;
+        /* transform: translate(-500px 50px); */
+        /* overflow: scroll; */
+        display: block;
+        transform: scale(0.8);
+        /* flex-flow: column;  */
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        margin-left: 0;
+        /* border: 1px solid red; */
+        
         /* bottom: 50px; */
-        /* margin-bottom: 5px;  */
+        /* margin-bottom: 5px; 
         /* border: 1px solid red; */
     }
     .todo-item {
         /* display: flex; */
-        width: 250px;
-        min-height: 50px;
+        width: 350px;
+        height: 30px;
         border: 1px solid black;
+        position: relative;
+        left: 0px;
         border-radius: 5px;
-        
-        transform: translateX(-14px);
-        background-color: rgb(130, 162, 126);
-        
+        padding: 0;
+        padding-left: 5px;
+        padding-top: 5px;
+        /* padding-top: 0;
+        padding-bottom: 0; */
+        /* transform: translateX(-14px); */
+        background-color: rgb(130, 162, 126);  
+    }
+    .description {
+        width: 250px;
+        height: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        align-items: center;
+        color: rgb(254, 253, 253);
+        /* font-size: 30px; */
+        text-shadow: rgb(10, 10, 10) 1px 1px;
     }
     .flex-wrapper {
         /* position: absolute;
         top: 0;
-        left: 0; */
+        /* left: 0; */ 
         width: 355px;
-        height: 700px;
+        height: 200px;
         /* border: 1px solid red; */
-        
+        position: relative;
+        /* top: 60px; */
+        margin-left: 0;
         /* flex-flow: column; */
         /* justify-content:center; */
         /* align-items: center; */
@@ -86,15 +110,21 @@
     }
     h2 {
         width: 355px;
-        transform: translate(100px, -100px);
+        position:absolute;
+        top: 50px;
+        left: 40%;
+        /* border: 1px solid red; */
+        /* transform: translate(100px, -80px); */
     }
     .add-todo-wrapper {
-        /* display: flex; */
+        
         /* width: 370px;
         min-height: 40px; */
         /* align-items: center; */
-        transform: translate(-14px, -100px);
-        
+        /* transform: translate(-14px, -100px); */
+        position: relative;
+        top: 30px;
+        left: -10px;
         width: 300px;
         height: 40px;
         background-color: rgb(138, 189, 255);
@@ -116,7 +146,7 @@
     }
 
     .button-wrapper {
-        width: 90px;;
+        width: 170px;
         height:auto;
         display: flex;
         justify-content: flex-end;
@@ -127,5 +157,7 @@
         transform: scale(2);
         outline-offset: 2px;
     }
+    
+   
     
 }
