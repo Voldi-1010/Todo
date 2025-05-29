@@ -3,19 +3,19 @@
        
         width: 355px;
         height:auto;
-        /* display: grid; */
+        display: grid;
         
         
     }
     .container {
         width: 355px;
         height:auto;
-        /* position: relative; */
+        position: relative;
         display: grid;
         /* border: 1px solid red; */
     }
     .container > div { 
-        /* flex-grow: 1; */
+        flex-grow: 1;
         width: 355px; 
     }
     .todos-wrapper {
@@ -26,11 +26,13 @@
         /* overflow: scroll; */
         display: block;
         transform: scale(0.8);
-        /* flex-flow: column;  */
+        flex-flow: column; 
         justify-content: center;
         align-items: center;
         padding-top: 5px;
         margin-left: 0;
+        position: relative;
+        top: 0;
         /* border: 1px solid red; */
         
         /* bottom: 50px; */
