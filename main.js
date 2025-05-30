@@ -1,6 +1,6 @@
-const addTaskBtn = document.getElementById('add-task-btn'); // получили элемент кнопку "Добавить"
-const deskTaskImput = document.getElementById('description-task'); // получили элемент импут, в который вводим наши задачи
-const todoWrapper = document.querySelector('.todos-wrapper'); // получили элемент, в который записываются задачи, которые мы вводим в импут
+const addTaskBtn = document.getElementById('add-task-btn'); // получили элемент кнопку "Добавити"
+const deskTaskImput = document.getElementById('description-task'); // получили елемент імпут, в якому вводим наш товар
+const todoWrapper = document.querySelector('.todos-wrapper'); // получили елемент, в якому записуються список, де вводився в імпут
 
 let tasks;
 !localStorage.tasks ? tasks = [] : tasks = JSON.parse(localStorage.getItem('tasks'));
@@ -17,8 +17,8 @@ const createTemlate = (task, index) => {
     <div class='todo-item ${task.completed ? 'checked' : ''}'>
         <div class='description'>${task.description}</div>
         <div class='buttons'>
-          <input onclick="completeTask(${index})" class='btn-comlete' type="checkbox" ${task.completed ? 'checked' : ''}>
-          <button onclick="deleteTask(${index})" class='btn-delete'><i class="material-icons">delete_outline </i></button>
+                <input onclick="completeTask(${index})" class='btn-comlete' type="checkbox" ${task.completed ? 'checked' : ''}>
+                <button onclick="deleteTask(${index})" class='btn-delete'><i class="material-icons">delete_outline </i></button>    
         </div>
     </div>
     `
